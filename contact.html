@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles1.css" />
     <script src="main.js"></script>
 </head>
 <body>
 
     <header>
-        <nav>
+        <nav class="column">
             <ul>
                 <li id="your-name"><h1>Roberto Gonzalez</h1></li>
                 
-                    <li class="right-side"><a href="index.html">About</a> </li>
+                    <li class="right-side"><a href="about.html">About</a> </li>
                     <li class="right-side"><a href="portfolio.html">Portfolio</a> |</li>
                     <li class="right-side"><a href="contact.html">Contact </a>|</li>
                 
@@ -23,34 +23,21 @@
         </nav>
     </header>
 
-    <div>
-        <article>
+  
+        <article class="column">
             <h3>Contact Form</h3>
 
-            <div class="container">
-            <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <p>Please subscribe by submitting your email:</p>
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
-            </div>
+            <form >
+                E-mail:
+                <input type="email" name="email">
+                <input type="submit">
+              </form>
+            
 
         </article>
-    </div>
+    
 
     <footer>
         <p>Copyright©</p>
